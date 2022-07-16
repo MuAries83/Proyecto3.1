@@ -1,33 +1,43 @@
+@import "variables.scss";
+@mixin fuente($forma, $estilo) {
+    font-style: $estilo;
+    font-family: $forma;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .letra{
+    @include fuente(sans-serif,none);
     padding: 3px, 15px, 3px, 15px;
-    font-size: 15px;
+    font-size: map-get($estilos, mediana);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: map-get($estilos, colores);
 }
 .letrero2{
-    color: white;
-    font-size: 15px;
+    @include fuente(sans-serif,none );
+    color: map-get($estilos,colores);
+    font-size: map-get($estilos , mediana);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .letrero3{
-    color: white;
-    font-size: 15px;
+    @include fuente(sans-serif,none );
+    color: map-get($estilos, colores);
+    font-size: map-get($estilos , mediana );
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .navbar{
-    background-color: #1e7aae;
+    background-color: $colorBarras;
 }
 footer{
-    background-color: #1e7aae;
+    background-color: $colorBarras;
     p{
+        @include fuente(sans-serif,none);
         margin-bottom: 2px;
-        color: aliceblue;
-        font-size: 12px;
+        color: map-get($estilos, colores);
+        font-size: map-get($estilos , mediana);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
@@ -35,13 +45,15 @@ footer{
 main{
     background-color: black;
     h3{
-        color: white;
-        font-size: 25px;
+        @include fuente(sans-serif,none );
+        color: map-get($estilos, colores);
+        font-size: map-get($estilos, grande);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     ul li{
-        color: white;
-        font-size: 12px;
+        @include fuente(sans-serif,none );
+        color: map-get($estilos, colores);
+        font-size: map-get($estilos, mediana);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
