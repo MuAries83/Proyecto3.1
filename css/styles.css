@@ -41,6 +41,16 @@ footer p {
 main {
   background-color: black;
 }
+main h3 {
+  color: white;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main ul li {
+  color: white;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*estilos para el giro y color de la animacion*/
 #portal {
